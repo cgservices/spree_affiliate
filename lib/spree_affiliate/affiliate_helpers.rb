@@ -1,5 +1,5 @@
 module SpreeAffiliate
-  module SpreeAffiliateHelpers
+  module AffiliateHelpers
     def self.included(receiver)
       receiver.send :helper_method, :current_affiliate
     end
