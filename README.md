@@ -1,21 +1,44 @@
-SpreeAffiliate
-==============
+# Spree Affiliate
 
-Adds affiliate functionality to Spree
+Spree Affiliate adds affiliates to the Spree admin and adds it to the order
 
 
-Example
-=======
+------------------------------------------------------------------------------
+Installation
+------------------------------------------------------------------------------
 
-Example goes here.
+Install spree_affiliate by adding the following to your existing spree site's Gemfile:
 
-Testing
--------
+## For spree 1-3-stable
+```spree 1-3-stable
+gem 'spree_affiliate', git: 'git@github.com:cgservices/spree_pages.git', branch: '1-3-stable'
+```
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+## For spree 2-0-stable
+```ruby
+gem 'spree_affiliate', git: 'git@github.com:cgservices/spree_pages.git', branch: '2-0-stable'
+```
 
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
+Now bundle up:
 
-Copyright (c) 2013 [name of extension creator], released under the New BSD License
+```bash
+bundle
+```
+
+Then run the generator which copies the migration template into your project:
+
+```bash
+rails g spree_affiliate:install
+```
+
+Migrate your database:
+
+```bash
+rake db:migrate
+```
+
+And boot up your server:
+
+```bash
+rails s
+```
