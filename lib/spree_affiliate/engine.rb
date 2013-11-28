@@ -18,7 +18,7 @@ module SpreeAffiliate
         end
       end
 
-      ApplicationController.send :include, SpreeAffiliate::SpreeAffiliateHelpers
+      ApplicationController.send :include, SpreeAffiliate::AffiliateHelpers
     end
 
     config.to_prepare &method(:activate).to_proc
