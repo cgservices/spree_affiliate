@@ -3,9 +3,13 @@
     <table>
       <tr>
         <td><%= label_tag t(:name, :scope => 'activerecord.attributes.spree/affiliate') %></td>
+        <td><%= label_tag t(:tracking_code, :scope => 'activerecord.attributes.spree/affiliate') %></td>
+        <td><%= label_tag t(:tracking_label, :scope => 'activerecord.attributes.spree/affiliate') %></td>
       </tr>
       <tr>
         <td><%= f.text_field :name %></td>
+        <td><%= f.text_field :tracking_code %></td>
+        <td><%= f.text_field :tracking_label %></td>
       </tr>
     </table>
   </div>

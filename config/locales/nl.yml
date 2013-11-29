@@ -4,5 +4,7 @@ nl:
       spree/affiliate:
         id: ID
         name: Naam
+        tracking_code: Tracking code
+        tracking_label: Tracking label
       spree/order:
         affiliate_id: Affiliate

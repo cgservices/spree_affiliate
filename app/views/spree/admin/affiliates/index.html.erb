@@ -16,13 +16,17 @@
   <colgroup>
     <col style="width: 40px">
     <col style="width: 175px">
-    <col style="width: 200px">
+    <col style="width: 250px">
+    <col style="width: 100px">
+    <col style="width: 150px">
     <col style="width: 50px">
   </colgroup>
   <thead>
     <tr data-hook="affiliates_header">
       <th><%= sort_link @search, :id, t(:id) %></th>
       <th><%= sort_link @search, :name, t(:name) %></th>
+      <th><%= sort_link @search, :tracking_code, t(:tracking_code) %></th>
+      <th><%= sort_link @search, :tracking_label, t(:tracking_label) %></th>
       <th><%= sort_link @search, :created_at,  t(:created_at) %></th>
       <th class="actions"></th>
     </tr>
@@ -32,6 +36,8 @@
     <tr id="<%= spree_dom_id affiliate %>" data-hook="affiliate_row" class="<%= cycle('odd', 'even')%>">
       <td class="align-center"><%= affiliate.id %></td>
       <td><%= affiliate.name %></td>
+      <td><%= affiliate.tracking_code %></td>
+      <td><%= affiliate.tracking_label %></td>
       <td><%= pretty_time(affiliate.created_at)%></td>
       <td class="actions">
         <%= link_to_edit affiliate, :no_text => true %>

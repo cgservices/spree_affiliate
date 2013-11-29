@@ -7,5 +7,7 @@ en:
       spree/affiliate:
         id: ID
         name: Name
+        tracking_code: Tracking code
+        tracking_label: Tracking label
       spree/order:
         affiliate_id: Affiliate
