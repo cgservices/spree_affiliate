@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_affiliate'
-  s.version     = '0.3.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.version     = '0.3.3'
+  s.summary     = 'Add affiliates to Spree'
+  s.description = 'Add affiliates to Spree'
   s.required_ruby_version = '>= 1.8.7'
 
   s.authors       = ['Creative Group']
@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'spree_core'
 
-  s.add_development_dependency 'capybara', '~> 1.1.2'
+  s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
-  s.add_development_dependency 'factory_girl', '~> 2.6.4'
+  s.add_development_dependency 'factory_girl', '~> 4.2'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails',  '~> 2.9'
+  s.add_development_dependency 'rspec-rails',  '~> 2.13'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'sqlite3'
 end
