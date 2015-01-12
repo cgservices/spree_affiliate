@@ -1,4 +1,4 @@
 <div class="field">
   <%= label_tag nil, t(:affiliate) %>
-  <%= f.select :affiliate_name_matches, Spree::Affiliate.uniq.pluck('`name`'), {:include_blank => true}, :class => 'select2' %>
+  <%= f.select :affiliate_name_matches, Spree::Affiliate.uniq.pluck('`name`'), {:include_blank => true}, :class => 'select2', :multiple => true %>
 </div>
