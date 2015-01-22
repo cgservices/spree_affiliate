@@ -1,0 +1,5 @@
+<!-- insert_bottom "[data-hook='admin_product_form_left']" -->
+<div class="field" data-hook="ean_code">
+  <%= f.label :affiliate, Spree.t(:affiliate) %>
+  <%= f.select :affiliate_id, Spree::Affiliate.order(:name).map{|affiliate| ["#{affiliate.name}", affiliate.id]}, {:include_blank => true}, {:class => "select2 fullwidth"} %>
+</div>
