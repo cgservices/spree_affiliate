@@ -1,6 +1,6 @@
 # Add AFFILIATES admin to Configuration Menu
 Deface::Override.new(
-    :virtual_path  => "spree/admin/shared/_configuration_menu",
+    :virtual_path  => "spree/admin/shared/sub_menu/_configuration",
     :name          => "affiliates_link",
     :insert_bottom => "[data-hook='admin_configurations_sidebar_menu']",
     :text          => "<%= configurations_sidebar_menu_item t(:affiliates), admin_affiliates_path %>",
