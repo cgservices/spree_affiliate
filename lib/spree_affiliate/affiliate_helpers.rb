@@ -21,13 +21,6 @@ module SpreeAffiliate
       if cookies[:affiliate_id] == nil || cookies[:affiliate_id].empty?
         cookies[:affiliate_id] = {:value => params[:aid], :expires => 30.minutes.from_now}
       end
-      # affiliate =
-      #   (cookies[:affiliate_id] == nil || cookies[:affiliate_id].empty?) ?
-      #   params[:aid] :
-      #   cookies[:affiliate_id]
-      # if(affiliate != cookies[:affiliate_id])
-      #   cookies[:affiliate_id] = {:value => affiliate, :expires => 30.minutes.from_now}
-      # end
     end
   end
 end
