@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_affiliate'
-  s.version     = '0.3.5'
+  s.version     = '0.3.6'
   s.summary     = 'Saves affiliates to cookies'
   s.description = 'This gem is used to saves affiliates to cookies'
   s.required_ruby_version = '>= 1.8.7'

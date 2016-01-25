@@ -18,8 +18,12 @@ module SpreeAffiliate
     # This method sets the affiliate Id in the cookie store,
     # with an expire time of 30 minutes
     def set_current_affiliate
-      if cookies[:affiliate_id] == nil || cookies[:affiliate_id].empty?
-        cookies[:affiliate_id] = {:value => params[:aid], :expires => 30.minutes.from_now}
+      if cookies[:affiliate_id].nil? || cookies[:affiliate_id].empty?
+        cookies[:affiliate_id] = {
+          value: params[:aid],
+          expires: 30.minutes.from_now,
+          httponly: true
+        }
       end
     end
   end
