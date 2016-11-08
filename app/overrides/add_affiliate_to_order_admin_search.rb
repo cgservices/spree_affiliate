@@ -1,12 +1,12 @@
 # Add AFFILIATE ID filter to the order search
-# Deface::Override.new(
-#     :virtual_path  => "spree/admin/orders/_filter",
-#     :name => "add_affiliate_id_to_search_filters",
-#     :insert_bottom => "[data-hook='admin_orders_index_search_filters_first_column']",
-#     :partial => "spree/admin/orders/add_affiliate_name_to_search_filters",
-#     :disabled => false,
-#     :original => '3e1e27e1c731d1766e57e9fa712ffd515dfe0e0d'
-# )
+Deface::Override.new(
+    :virtual_path  => "spree/admin/orders/_filter",
+    :name => "add_affiliate_id_to_search_filters",
+    :insert_bottom => "[data-hook='admin_orders_index_search_filters_fourth_column']",
+    :partial => "spree/admin/orders/add_affiliate_name_to_search_filters",
+    :disabled => false,
+    :original => '3e1e27e1c731d1766e57e9fa712ffd515dfe0e0d'
+)
 # Add a AFFILIATE ID column to the search results headers
 Deface::Override.new(
     :name => "add_affiliate_id_to_search_results_headers",

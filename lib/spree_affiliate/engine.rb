@@ -19,6 +19,7 @@ module SpreeAffiliate
       end
 
       ApplicationController.send :include, SpreeAffiliate::AffiliateHelpers
+      Spree::Order.whitelisted_ransackable_associations |= %w(affiliate)
     end
 
     config.to_prepare &method(:activate).to_proc
